@@ -16,6 +16,8 @@
 		1404B2D726435C0600EFCF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1404B2D526435C0600EFCF46 /* LaunchScreen.storyboard */; };
 		1404B2E026435D7A00EFCF46 /* CategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B2DF26435D7A00EFCF46 /* CategoryImage.swift */; };
 		1404B2E3264364A200EFCF46 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B2E2264364A200EFCF46 /* CheckBox.swift */; };
+		1404B2E726441A1900EFCF46 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B2E626441A1900EFCF46 /* Color+Extension.swift */; };
+		1404B2EB26441AC300EFCF46 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B2EA26441AC300EFCF46 /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1404B2D826435C0600EFCF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1404B2DF26435D7A00EFCF46 /* CategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImage.swift; sourceTree = "<group>"; };
 		1404B2E2264364A200EFCF46 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		1404B2E626441A1900EFCF46 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		1404B2EA26441AC300EFCF46 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,13 @@
 		1404B2C626435C0300EFCF46 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				1404B2E5264419C100EFCF46 /* Extension */,
 				1404B2C726435C0300EFCF46 /* AppDelegate.swift */,
 				1404B2C926435C0300EFCF46 /* SceneDelegate.swift */,
 				1404B2CB26435C0300EFCF46 /* ContentView.swift */,
 				1404B2DF26435D7A00EFCF46 /* CategoryImage.swift */,
 				1404B2E2264364A200EFCF46 /* CheckBox.swift */,
+				1404B2EA26441AC300EFCF46 /* UserView.swift */,
 				1404B2D026435C0600EFCF46 /* Assets.xcassets */,
 				1404B2D526435C0600EFCF46 /* LaunchScreen.storyboard */,
 				1404B2D826435C0600EFCF46 /* Info.plist */,
@@ -82,6 +88,14 @@
 				1404B2D326435C0600EFCF46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1404B2E5264419C100EFCF46 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1404B2E626441A1900EFCF46 /* Color+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1404B2C826435C0300EFCF46 /* AppDelegate.swift in Sources */,
+				1404B2E726441A1900EFCF46 /* Color+Extension.swift in Sources */,
 				1404B2CA26435C0300EFCF46 /* SceneDelegate.swift in Sources */,
+				1404B2EB26441AC300EFCF46 /* UserView.swift in Sources */,
 				1404B2E3264364A200EFCF46 /* CheckBox.swift in Sources */,
 				1404B2CC26435C0300EFCF46 /* ContentView.swift in Sources */,
 				1404B2E026435D7A00EFCF46 /* CategoryImage.swift in Sources */,

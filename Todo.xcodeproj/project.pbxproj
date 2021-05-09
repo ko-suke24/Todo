@@ -24,6 +24,7 @@
 		1404B2FB26445CAD00EFCF46 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B2FA26445CAD00EFCF46 /* TodoList.swift */; };
 		1404B2FE2644F2E400EFCF46 /* TodoDetaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B2FD2644F2E300EFCF46 /* TodoDetaRow.swift */; };
 		1404B3012647F43800EFCF46 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B3002647F43800EFCF46 /* NewTask.swift */; };
+		1404B3042648364A00EFCF46 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B3032648364A00EFCF46 /* Binding+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		1404B2FA26445CAD00EFCF46 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		1404B2FD2644F2E300EFCF46 /* TodoDetaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetaRow.swift; sourceTree = "<group>"; };
 		1404B3002647F43800EFCF46 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		1404B3032648364A00EFCF46 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				1404B2E626441A1900EFCF46 /* Color+Extension.swift */,
 				1404B2ED2644337100EFCF46 /* TodoEntity + Extension.swift */,
+				1404B3032648364A00EFCF46 /* Binding+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				1404B2F42644505900EFCF46 /* QuickNewTask.swift in Sources */,
 				1404B2E726441A1900EFCF46 /* Color+Extension.swift in Sources */,
 				1404B2FB26445CAD00EFCF46 /* TodoList.swift in Sources */,
+				1404B3042648364A00EFCF46 /* Binding+Extension.swift in Sources */,
 				1404B2CA26435C0300EFCF46 /* SceneDelegate.swift in Sources */,
 				1404B2EB26441AC300EFCF46 /* UserView.swift in Sources */,
 				1404B2F12644496D00EFCF46 /* CategoryView.swift in Sources */,

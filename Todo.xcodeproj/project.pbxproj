@@ -26,6 +26,8 @@
 		1404B3012647F43800EFCF46 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B3002647F43800EFCF46 /* NewTask.swift */; };
 		1404B3042648364A00EFCF46 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B3032648364A00EFCF46 /* Binding+Extension.swift */; };
 		1404B3072648736500EFCF46 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B3062648736500EFCF46 /* EditTask.swift */; };
+		1404B30A264887E400EFCF46 /* TaskToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B309264887E400EFCF46 /* TaskToday.swift */; };
+		1404B30D2648882A00EFCF46 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404B30C2648882A00EFCF46 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		1404B3002647F43800EFCF46 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 		1404B3032648364A00EFCF46 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 		1404B3062648736500EFCF46 /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
+		1404B309264887E400EFCF46 /* TaskToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToday.swift; sourceTree = "<group>"; };
+		1404B30C2648882A00EFCF46 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				1404B2FD2644F2E300EFCF46 /* TodoDetaRow.swift */,
 				1404B3002647F43800EFCF46 /* NewTask.swift */,
 				1404B3062648736500EFCF46 /* EditTask.swift */,
+				1404B309264887E400EFCF46 /* TaskToday.swift */,
 				1404B2D026435C0600EFCF46 /* Assets.xcassets */,
 				1404B2D526435C0600EFCF46 /* LaunchScreen.storyboard */,
 				1404B2D826435C0600EFCF46 /* Info.plist */,
@@ -118,6 +123,7 @@
 				1404B2E626441A1900EFCF46 /* Color+Extension.swift */,
 				1404B2ED2644337100EFCF46 /* TodoEntity + Extension.swift */,
 				1404B3032648364A00EFCF46 /* Binding+Extension.swift */,
+				1404B30C2648882A00EFCF46 /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				1404B2FB26445CAD00EFCF46 /* TodoList.swift in Sources */,
 				1404B3042648364A00EFCF46 /* Binding+Extension.swift in Sources */,
 				1404B2CA26435C0300EFCF46 /* SceneDelegate.swift in Sources */,
+				1404B30A264887E400EFCF46 /* TaskToday.swift in Sources */,
 				1404B2EB26441AC300EFCF46 /* UserView.swift in Sources */,
 				1404B2F12644496D00EFCF46 /* CategoryView.swift in Sources */,
 				1404B2EE2644337100EFCF46 /* TodoEntity + Extension.swift in Sources */,
@@ -208,6 +215,7 @@
 				1404B2CC26435C0300EFCF46 /* ContentView.swift in Sources */,
 				1404B2E026435D7A00EFCF46 /* CategoryImage.swift in Sources */,
 				1404B2CF26435C0300EFCF46 /* Todo.xcdatamodeld in Sources */,
+				1404B30D2648882A00EFCF46 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

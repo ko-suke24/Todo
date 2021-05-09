@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 0) {
@@ -28,6 +30,9 @@ struct ContentView: View {
                     CategoryView(category: .NImpNUrg_4th)
                 }
             }.padding()
+            
+            TaskToday()
+            
         }.background(Color.tBackground)
             .edgesIgnoringSafeArea(.bottom)
     }

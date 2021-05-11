@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 0) {
-            Color.tBackground
-                .edgesIgnoringSafeArea(.top)
-                .frame(height:0)
-            UserView(image: Image("profile"), userName: "aaaa")
-            VStack(spacing: 0) {
-                
+        VStack {
+//            Color.tBackground
+//                .edgesIgnoringSafeArea(.top)
+//                .frame(height:0)
+//            UserView(image: Image("profile"), userName: "aaaa")
+            TaskToday()
+                .frame(width: 330, height: 250)
+            
+            VStack(spacing: 5) {
                 HStack(spacing: 0) {
                     CategoryView(category: .ImpUrg_1st)
                     Spacer()
@@ -29,12 +29,10 @@ struct ContentView: View {
                     Spacer()
                     CategoryView(category: .NImpNUrg_4th)
                 }
-            }.padding()
-            
-            TaskToday()
-            
-        }.background(Color.tBackground)
-            .edgesIgnoringSafeArea(.bottom)
+            }.frame(width: 300, height: 300)
+            .padding()
+            Spacer()
+        }
     }
 }
 

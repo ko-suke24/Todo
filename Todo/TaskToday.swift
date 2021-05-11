@@ -25,6 +25,7 @@ struct TaskToday: View {
             }
             
         }.background(Color(UIColor.systemBackground))
+        .clipShape(RoundedCorners(tl: 40, tr: 40, bl: 0, br: 0))
     }
 }
 

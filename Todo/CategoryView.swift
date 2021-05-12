@@ -38,14 +38,14 @@ struct CategoryView: View {
 
             Text(category.toString())
             Text("・\(numberOfTasks)タスク")
-            Button(action: {
-                self.addNewtask = true
-            }) {
-                Image(systemName: "plus")
-            }.sheet(isPresented: $addNewtask, onDismiss: {self.update()}) {
-                NewTask(category: self.category.rawValue)
-                    .environment(\.managedObjectContext, self.viewContext)
-            }
+//            Button(action: {
+//                self.addNewtask = true
+//            }) {
+//                Image(systemName: "plus")
+//            }.sheet(isPresented: $addNewtask, onDismiss: {self.update()}) {
+//                NewTask(category: self.category.rawValue)
+//                    .environment(\.managedObjectContext, self.viewContext)
+//            }
             Spacer()
         }
             .padding()
@@ -73,6 +73,5 @@ struct CategoryView_Previews: PreviewProvider {
             CategoryView(category: .NImpUrg_3rd)
             CategoryView(category: .NImpNUrg_4th)
         }.environment(\.managedObjectContext, context)
-        
     }
 }

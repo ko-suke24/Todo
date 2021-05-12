@@ -38,7 +38,6 @@ struct UserView_Previews: PreviewProvider {
         Group {
             UserView(image: Image("profile"),
                      userName: "UserName")
-            Circle()
         }
         
     }

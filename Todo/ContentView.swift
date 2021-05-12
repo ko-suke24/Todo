@@ -9,11 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-//            Color.tBackground
-//                .edgesIgnoringSafeArea(.top)
-//                .frame(height:0)
-//            UserView(image: Image("profile"), userName: "aaaa")
+        VStack() {
+            
             TaskToday()
                 .frame(width: 330, height: 250)
             
@@ -32,6 +29,12 @@ struct ContentView: View {
             }.frame(width: 300, height: 300)
             .padding()
             Spacer()
+            
+            HStack {
+                Spacer()
+                Add_to_Button(category: .ImpUrg_1st)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 30))
+            }
         }
     }
 }

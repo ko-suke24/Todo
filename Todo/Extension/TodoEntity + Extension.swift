@@ -39,25 +39,25 @@ extension TodoEntity {
         func toString() -> String {
             switch self {
             case .ImpUrg_1st:
-                return "重要かつ緊急"
+                return "仕事"
             case .ImpNUrg_2nd:
-                return "重要だが緊急ではない"
+                return "生活"
             case .NImpUrg_3rd:
-                return "重要でないが緊急"
+                return "趣味"
             case .NImpNUrg_4th:
-                return "重要でも緊急でもない"
+                return "買い物"
             }
         }
         func image() -> String {
             switch self {
             case .ImpUrg_1st:
-                return "flame"
+                return "hammer.fill"
             case .ImpNUrg_2nd:
-                return "tortoise.fill"
+                return "house.fill"
             case .NImpUrg_3rd:
-                return "alarm"
+                return "book.fill"
             case .NImpNUrg_4th:
-                return "tv.music.note"
+                return "cart.fill"
             }
         }
         func color() -> Color {

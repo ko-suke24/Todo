@@ -1,5 +1,5 @@
 # [TODOリスト]
-###TODOリスト　- 4種類で管理するアプリ -
+### TODOリスト　- 4種類で管理するアプリ -
 #
 
 <img src="https://user-images.githubusercontent.com/64761563/117969954-090e5300-b363-11eb-809e-58777b1dae6f.png" width="250">
@@ -19,7 +19,7 @@
   + 開発環境
       + Xcode12.4, SwiftUI, CoreData
       
-##意識した点
+## 意識した点
 ### アプリのUI/UX
  - 片手で使いやすいように各タスク一覧をモーダル表示にした
  - DatePickerを使用した日付管理

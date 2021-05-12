@@ -1,11 +1,9 @@
 # [TODOリスト]
 ###TODOリスト　- 4種類で管理するアプリ -
 #
-ホーム画面
+
 <img src="https://user-images.githubusercontent.com/64761563/117969954-090e5300-b363-11eb-809e-58777b1dae6f.png" width="250">
-タスク追加画面
 <img src="https://user-images.githubusercontent.com/64761563/118016498-6d93d700-b390-11eb-988d-636f5d078225.gif" width="250">
-タスク編集画面
 <img src="https://user-images.githubusercontent.com/64761563/118017513-aed8b680-b391-11eb-9dfc-a904d665e552.gif" width="250">
 
 # アプリの特徴

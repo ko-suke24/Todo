@@ -18,7 +18,7 @@
     + [***Twitter***](https://twitter.com/Kou_567)
     + [***Qiita***](https://qiita.com/ko-suke24)
   + 開発環境
-      + Xcode12.4, SwiftUI, CoreData
+      + Xcode12.4, SwiftUI, CoreData　
       
 ## 意識した点
 ### アプリのUI/UX

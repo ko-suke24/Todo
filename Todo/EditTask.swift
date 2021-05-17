@@ -13,6 +13,7 @@ struct EditTask: View {
     var categories: [TodoEntity.Category]
         = [.ImpUrg_1st, .ImpNUrg_2nd, .NImpUrg_3rd, .NImpNUrg_4th]
     @Environment(\.managedObjectContext) var viewContext
+    @ObservedObject var keyboard = KeyboardObserver()
     
     fileprivate func save() {
         do {
@@ -55,11 +56,11 @@ struct EditTask: View {
                 }) {
                     HStack(alignment: .center) {
                         Image(systemName: "minus.circle.fill")
-                        Text("Delete")
+                        Text("タスクの削除")
                     }.foregroundColor(.red)
                 }
             }
-        }.navigationBarTitle("タスクの編集")
+        }.navigationTitle("タスクの編集")
             .navigationBarItems(trailing: Button(action: {
                 self.save()
                 self.presentationMode.wrappedValue.dismiss()

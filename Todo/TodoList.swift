@@ -47,16 +47,9 @@ struct TodoList: View {
                     }.onDelete(perform: deleteTodo)
                 }
                 QuickNewTask(category: category)
-                    .padding()
             }.navigationBarTitle(category.toString())
             .navigationBarItems(trailing: EditButton())
-        }.onAppear{
-            self.keyboard.startObserve()
-            UIApplication.shared.closeKeyboard()
-        }.onDisappear{
-            self.keyboard.stopObserve()
-            UIApplication.shared.closeKeyboard()
-        }.padding(.bottom, keyboard.keyboardHeight)
+        }
     }
 }
 

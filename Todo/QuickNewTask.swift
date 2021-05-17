@@ -13,6 +13,7 @@ struct QuickNewTask: View {
     
     @State private var newTask: String = ""
     @Environment(\.managedObjectContext) var viewContext
+    @ObservedObject var keyboard = KeyboardObserver()
     
     fileprivate func addNewTask() {
         TodoEntity.create(in: self.viewContext,
@@ -21,32 +22,34 @@ struct QuickNewTask: View {
         self.newTask = ""
     }
     
-    fileprivate func cancelTask() {
+    fileprivate func cancel() {
         self.newTask = ""
     }
     
     
     var body: some View {
         
-        HStack {
+        HStack(spacing: 15) {
             TextField("新しいタスク", text: $newTask,
                       onCommit: {
                         self.newTask = ""
             })
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {
                     self.addNewTask()
             }) {
                 Text("追加")
             }
             Button(action: {
-                    self.cancelTask()
+                    self.cancel()
             }) {
-                Text("キャンセル")
+                Text("閉じる")
                     .foregroundColor(.red)
+                    .onTapGesture {
+                        UIApplication.shared.closeKeyboard()
+                    }
             }
-        }
+        }.padding(EdgeInsets(top: 20, leading: 10, bottom: 10, trailing: 10))
     }
 }
 

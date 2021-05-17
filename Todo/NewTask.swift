@@ -57,7 +57,7 @@ struct NewTask: View {
                         }.foregroundColor(.red)
                     }
                 }
-            }.navigationBarTitle("タスクの追加")
+            }.navigationTitle("タスクの追加")
                 .navigationBarItems(trailing: Button(action: {
                     TodoEntity.create(in: self.viewContext,
                                       category: TodoEntity.Category(rawValue: self.category) ?? .ImpUrg_1st,

@@ -21,6 +21,8 @@ struct CheckBox<Label>: View where Label: View {
     var body: some View {
         HStack {
             Image(systemName: checked ? "checkmark.circle" : "circle")
+                .resizable()
+                .frame(width: 20, height: 20)
                 .onTapGesture {
                     self.checked.toggle()
             }

@@ -20,12 +20,11 @@ struct TaskToday: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("今日のタスク").font(.footnote).bold().padding()
+            Divider()
             List(todoList) { todo in
                 TodoDetailRow(todo: todo)
             }
-            
         }
-        .clipShape(RoundedCorners(tl: 40, tr: 40, bl: 0, br: 0))
     }
 }
 

@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TaskToday()
-                .frame(width: 340, height: 240)
-                .padding(EdgeInsets(top: 50, leading: 10, bottom: 0, trailing: 10))
+                .frame(width: 340, height: 270)
+                .padding(EdgeInsets(top: 20, leading: 10, bottom: 0, trailing: 10))
             Spacer()
             VStack(spacing: 5) {
                 HStack(spacing: 0) {
@@ -26,8 +26,8 @@ struct ContentView: View {
                     Spacer()
                     CategoryView(category: .NImpNUrg_4th)
                 }
-            }.frame(width: 300, height: 290)
-            .padding(EdgeInsets(top: 20, leading: 30, bottom: 20, trailing: 30))
+            }.frame(width: 300, height: 280)
+            .padding(EdgeInsets(top: 10, leading: 30, bottom: 30, trailing: 30))
             HStack {
                 Spacer()
                 Add_to_Button(category: .ImpUrg_1st)

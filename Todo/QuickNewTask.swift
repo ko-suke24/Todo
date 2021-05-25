@@ -14,11 +14,19 @@ struct QuickNewTask: View {
     @State private var newTask: String = ""
     @Environment(\.managedObjectContext) var viewContext
     @ObservedObject var keyboard = KeyboardObserver()
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \TodoEntity.data, ascending: true)
+        ],
+        animation: .default)
+    private var todoList: FetchedResults<TodoEntity>
+    
     
     fileprivate func addNewTask() {
         TodoEntity.create(in: self.viewContext,
                           category: self.category,
-                          task: self.newTask)
+                          task: self.newTask
+                          )
         self.newTask = ""
     }
     
@@ -27,22 +35,30 @@ struct QuickNewTask: View {
     }
     
     
+    fileprivate func addtask() {
+        if newTask != "" {
+            let taskSave = TodoEntity(context: self.viewContext)
+            taskSave.id = UUID()
+            taskSave.category = category.rawValue
+            taskSave.task = newTask
+            taskSave.data = (todoList.last?.data ?? 0) + 1
+            try? self.viewContext.save()
+            self.newTask = ""
+        }
+    }
+    
     var body: some View {
         
         HStack(spacing: 15) {
             TextField("新しいタスク", text: $newTask,
                       onCommit: {
-                        self.newTask = ""
+                        newTask = ""
             })
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-            Button(action: {
-                    self.addNewTask()
-            }) {
+            Button(action: addtask) {
                 Text("追加")
             }
-            Button(action: {
-                    self.cancel()
-            }) {
+            Button(action: cancel) {
                 Text("閉じる")
                     .foregroundColor(.red)
                     .onTapGesture {

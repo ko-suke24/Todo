@@ -20,7 +20,7 @@ extension TodoEntity {
         todo.category = category.rawValue
         todo.task = task
         todo.state = State.todo.rawValue
-        todo.id = UUID().uuidString
+        todo.id = UUID()
         
         do {
             try  managedObjectContext.save()

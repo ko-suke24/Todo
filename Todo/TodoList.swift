@@ -10,44 +10,62 @@ import CoreData
 
 struct TodoList: View {
     
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \TodoEntity.time,
-                                           ascending: true)],
-        animation: .default)
-    var todoList: FetchedResults<TodoEntity>
-
     @Environment(\.managedObjectContext) var viewContext
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \TodoEntity.data, ascending: true)],
+        animation: .default)
+    private var todoList: FetchedResults<TodoEntity>
+    let category: TodoEntity.Category
     
-    @ObservedObject var keyboard = KeyboardObserver()
-    
-    fileprivate func deleteTodo(at offsets: IndexSet) {
+    private func deleteTodo(at offsets: IndexSet) {
         for index in offsets {
             let entity = todoList[index]
             viewContext.delete(entity)
-        }
-        do {
-            try viewContext.save()
-        } catch {
-            print("Delete Error. \(offsets)")
+            saveData()
         }
     }
     
-    let category: TodoEntity.Category
+    private func move(from source: IndexSet, to destination: Int) {
+        if source.first! > destination {
+            todoList[source.first!].data = todoList[destination].data - 1
+            for i in destination...todoList.count - 1 {
+                todoList[i].data = todoList[i].data + 1
+            }
+        }
+        if source.first! < destination {
+            todoList[source.first!].data = todoList[destination - 1].data + 1
+            for i in 0...destination - 1 {
+                todoList[i].data = todoList[i].data - 1
+            }
+        }
+      saveData()
+    }
+        
+    private func saveData() {
+        try? self.viewContext.save()
+    }
     
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(todoList) { todo in
+                    ForEach(todoList, id: \.id) { todo in
                         if todo.category == self.category.rawValue {
-                            NavigationLink(destination: EditTask(todo: todo)) {
+                            NavigationLink(destination: EditTask(todo: todo))
+                            {
                                 TodoDetailRow(todo: todo, hideIcon: true)
                             }
                         }
-                    }.onDelete(perform: deleteTodo)
+                    }
+                    .onDelete(perform: deleteTodo)
+                    .onMove(perform: move)
+                }
+                .toolbar {
+                    EditButton()
                 }
                 QuickNewTask(category: category)
-            }.navigationTitle(category.toString())
+            }
+            .navigationTitle(category.toString())
         }
     }
 }

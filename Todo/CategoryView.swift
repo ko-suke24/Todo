@@ -28,7 +28,7 @@ struct CategoryView: View {
                                     endPoint: .bottom)
         
         
-        return VStack(alignment: .leading) {
+        return VStack(alignment: .center) {
             Image(systemName: category.image())
                 .font(.largeTitle)
                 .sheet(isPresented: $showList, onDismiss: {self.update()}) {
@@ -37,15 +37,8 @@ struct CategoryView: View {
                 }
 
             Text(category.toString())
-            Text("・\(numberOfTasks)タスク")
-//            Button(action: {
-//                self.addNewtask = true
-//            }) {
-//                Image(systemName: "plus")
-//            }.sheet(isPresented: $addNewtask, onDismiss: {self.update()}) {
-//                NewTask(category: self.category.rawValue)
-//                    .environment(\.managedObjectContext, self.viewContext)
-//            }
+            Spacer()
+            Text("\(numberOfTasks)タスク")
             Spacer()
         }
             .padding()

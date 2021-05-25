@@ -39,11 +39,11 @@ extension TodoEntity {
         func toString() -> String {
             switch self {
             case .ImpUrg_1st:
-                return "仕事"
+                return "仕 事"
             case .ImpNUrg_2nd:
-                return "生活"
+                return "生 活"
             case .NImpUrg_3rd:
-                return "趣味"
+                return "趣 味"
             case .NImpNUrg_4th:
                 return "買い物"
             }
@@ -51,7 +51,7 @@ extension TodoEntity {
         func image() -> String {
             switch self {
             case .ImpUrg_1st:
-                return "hammer.fill"
+                return "desktopcomputer"
             case .ImpNUrg_2nd:
                 return "house.fill"
             case .NImpUrg_3rd:

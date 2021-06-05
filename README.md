@@ -1,10 +1,11 @@
 # [TODOリスト]
 ### TODOリスト　- 4種類で管理するアプリ -
+### App Store URL
+https://apps.apple.com/jp/app/todo%E3%83%AA%E3%82%B9%E3%83%88-4%E8%89%B2%E3%81%A7%E3%82%BF%E3%82%B9%E3%82%AF%E3%82%92%E7%AE%A1%E7%90%86/id1569361565
 
 #
 
-<img src="https://user-images.githubusercontent.com/64761563/117969954-090e5300-b363-11eb-809e-58777b1dae6f.png" width="250"><img src="https://user-images.githubusercontent.com/64761563/118016498-6d93d700-b390-11eb-988d-636f5d078225.gif" width="250">
-<img src="https://user-images.githubusercontent.com/64761563/118017513-aed8b680-b391-11eb-9dfc-a904d665e552.gif" width="240">
+<img src="https://user-images.githubusercontent.com/64761563/120903203-d153ac00-c67f-11eb-8d03-7998523ee872.png" width="240"><img src="https://user-images.githubusercontent.com/64761563/120903210-d7498d00-c67f-11eb-9c95-93052a45a488.png" width="240"><img src="https://user-images.githubusercontent.com/64761563/120903216-e0d2f500-c67f-11eb-8639-a98e3ea1f698.png" width="240">
 
 
 # アプリの特徴

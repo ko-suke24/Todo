@@ -17,7 +17,6 @@ https://apps.apple.com/jp/app/todo%E3%83%AA%E3%82%B9%E3%83%88-4%E8%89%B2%E3%81%A
 # 製作者
 + [***ko-suke24***](https://github.com/ko-suke24)
     + [***Twitter***](https://twitter.com/Kou_567)
-    + [***Qiita***](https://qiita.com/ko-suke24)
   + 開発環境
       + Xcode12.4, SwiftUI, CoreData　
       
